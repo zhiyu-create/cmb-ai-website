@@ -1,0 +1,24 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: cmb-ai-website
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: 123456
+eureka:
+  instance:
+    prefer-ip-address: true
+    hostname: 127.0.0.1
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8001/eureka
+
+
+
+
+
