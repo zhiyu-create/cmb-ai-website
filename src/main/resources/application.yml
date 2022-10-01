@@ -1,6 +1,9 @@
 server:
   port: 8002
 spring:
+  redis:
+    host: localhost
+    port: 6379
   application:
     name: cmb-ai-website
   datasource:
@@ -17,6 +20,22 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8001/eureka
+
+#mybatis-plus
+mybatis-plus:
+  global-config:
+    db-config:
+      table-prefix: ms_
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: true
+  type-aliases-package: com.example.cmbaiwebsite
+  mapper-locations: classpath:mybatis/mapper/*Mapper.xml
+
+
+
+
+
 
 
 
