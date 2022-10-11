@@ -7,7 +7,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 
 @SpringBootApplication
 @EnableEurekaClient
-@MapperScan(basePackages = {"com.example.cmbaiwebsite.mapper"})
+@MapperScan("com.example.cmbaiwebsite.mapper")
 public class CmbAiWebsiteApplication {
 
     public static void main(String[] args) {
