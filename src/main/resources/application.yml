@@ -30,6 +30,12 @@ mybatis:
   #标注实体类位置
   type-aliases-package: com.example.cmbaiwebsite.entity
 
+#日志文件
+logging:
+  level:
+    com.example.cmbaiwebsite.mapper: debug
+    #config: classpath:logback-spring.xml;
+
 
 
 
